@@ -18,7 +18,7 @@ const HomePage = lazy(() => import("./pages/home/HomePage"));
 // App Component
 //—————————————————————————————————————————————————————————————————
 
-export const App = () => {
+const App = () => {
   return (
     <BrowserRouter>
       <Suspense fallback={<AppLoader />}>
@@ -30,3 +30,5 @@ export const App = () => {
     </BrowserRouter>
   );
 };
+
+export default App;
