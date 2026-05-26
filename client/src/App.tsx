@@ -11,6 +11,7 @@ import { AppLoader } from "./components/common";
 // Lazy page imports
 //—————————————————————————————————————————————————————————————————
 
+const NotFoundPage = lazy(() => import("./pages/notFound/NotFoundPage"));
 const HomePage = lazy(() => import("./pages/home/HomePage"));
 
 //—————————————————————————————————————————————————————————————————
@@ -23,6 +24,7 @@ export const App = () => {
       <Suspense fallback={<AppLoader />}>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Suspense>
     </BrowserRouter>
