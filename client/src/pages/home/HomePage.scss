@@ -2,5 +2,70 @@
 
 .home {
   flex: 1;
-  background: $light-gradient;
+  width: 1170px;
+  @include vertical-gap(64px);
+  padding-bottom: 80px;
+
+  //—————————————————————————————————————————————————————————————————
+  // Header Section
+  //—————————————————————————————————————————————————————————————————
+
+  &__header {
+    @include vertical-gap(64px);
+    padding-top: 40px;
+  }
+
+  &__top-bar {
+    @include flex-between;
+  }
+
+  &__profile {
+    @include horizontal-gap(10px);
+    align-items: center;
+
+    // Dropdown menu arrow
+    & svg {
+      cursor: pointer;
+    }
+  }
+
+  &__greeting {
+    @include vertical-gap(10px);
+    align-items: center;
+  }
+
+  &__greeting-user {
+    font: $reddit-3;
+    color: $blue-600;
+  }
+
+  &__question-user {
+    font: $reddit-1;
+    color: $neutral-900;
+  }
+
+  &__current-date {
+    font: $reddit-6;
+    color: $neutral-600;
+  }
+
+  &__log-mood-btn {
+    @include button-styles;
+    background: $blue-600;
+    color: $neutral-0;
+    align-self: center;
+    font: $reddit-5;
+  }
+
+  //—————————————————————————————————————————————————————————————————
+  // Main Content Section
+  //—————————————————————————————————————————————————————————————————
+
+  &__content {
+    @include horizontal-gap(32px);
+  }
+}
+
+.page-icon {
+  @include horizontal-gap(16px);
 }
