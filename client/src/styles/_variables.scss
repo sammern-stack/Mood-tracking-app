@@ -1,3 +1,5 @@
+@use "./fonts" as *;
+
 //—————————————————————————————————————————————————————————————————
 // General Colors
 //—————————————————————————————————————————————————————————————————
@@ -33,3 +35,25 @@ $light-gradient: linear-gradient(180deg, #f5f5ff 72.99%, #e0e0ff 100%);
 //—————————————————————————————————————————————————————————————————
 
 $main-background: $light-gradient;
+
+//—————————————————————————————————————————————————————————————————
+// Typography
+//—————————————————————————————————————————————————————————————————
+$static-font: "Reddit Sans", sans-serif;
+$variable-font: "Reddit Sans Variable", sans-serif;
+
+$reddit-1: 700 52px/140% #{$static-font};
+$reddit-1-mobile: 700 46px/120% #{$static-font};
+$reddit-2: 700 40px/120% #{$static-font};
+$reddit-2-mobile: 700 32px/120% #{$static-font};
+$reddit-3: 700 32px/140% #{$static-font};
+$reddit-3-mobile: 700 28px/140% #{$static-font};
+$reddit-4: 600 24px/140% #{$static-font};
+$reddit-4-regular: 400 24px/140% #{$static-font};
+$reddit-5: 600 20px/140% #{$static-font};
+$reddit-6: 500 18px/120% #{$static-font};
+$reddit-6-italic: 500 18px/130% #{$variable-font};
+$reddit-6-regular: 400 18px/140% #{$static-font};
+$reddit-7: 400 15px/140% #{$static-font};
+$reddit-8: 600 13px/100% #{$static-font};
+$reddit-9: 400 12px/110% #{$static-font};
