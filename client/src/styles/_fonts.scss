@@ -1,43 +1,40 @@
 // ────────────────────────────────
 // Reddit Sans — Static weights
 // ────────────────────────────────
+$static-path: "../assets/fonts/Reddit_Sans/static";
+$variable-path: "../assets/fonts/Reddit_Sans";
 
 @font-face {
   font-family: "Reddit Sans";
-  src: url("../assets/fonts/Reddit_Sans/static/RedditSans-Regular.ttf")
-    format("truetype");
+  src: url("#{$static-path}/RedditSans-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Reddit Sans";
-  src: url("../assets/fonts/Reddit_Sans/static/RedditSans-Medium.ttf")
-    format("truetype");
+  src: url("#{$static-path}/RedditSans-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Reddit Sans";
-  src: url("../assets/fonts/Reddit_Sans/static/RedditSans-SemiBold.ttf")
-    format("truetype");
+  src: url("#{$static-path}/RedditSans-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Reddit Sans";
-  src: url("../assets/fonts/Reddit_Sans/static/RedditSans-Bold.ttf")
-    format("truetype");
+  src: url("#{$static-path}/RedditSans-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Reddit Sans";
-  src: url("../assets/fonts/Reddit_Sans/static/RedditSans-MediumItalic.ttf")
-    format("truetype");
+  src: url("#{$static-path}/RedditSans-MediumItalic.ttf") format("truetype");
   font-weight: 500;
   font-style: italic;
 }
@@ -48,7 +45,7 @@
 
 @font-face {
   font-family: "Reddit Sans Variable";
-  src: url("../assets/fonts/Reddit_Sans/RedditSans-VariableFont_wght.ttf")
+  src: url("#{$variable-path}/RedditSans-VariableFont_wght.ttf")
     format("truetype");
   font-weight: 100 900;
   font-style: normal;
@@ -56,7 +53,7 @@
 
 @font-face {
   font-family: "Reddit Sans Variable";
-  src: url("../assets/fonts/Reddit_Sans/RedditSans-Italic-VariableFont_wght.ttf")
+  src: url("#{$variable-path}/RedditSans-Italic-VariableFont_wght.ttf")
     format("truetype");
   font-weight: 100 900;
   font-style: italic;
